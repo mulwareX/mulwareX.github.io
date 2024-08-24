@@ -5,158 +5,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Your Name</title>
-    <link rel="icon" type="image/png" href="images/your-logo.png">
+    <title>Mulware | Certified Malware Developer</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         /* CSS Styling */
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #0d1117;
-            color: #c9d1d9;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #161b22;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .header .logo {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #58a6ff;
-            text-decoration: none;
-        }
-
-        .navbar a {
-            color: #c9d1d9;
-            text-decoration: none;
-            padding: 10px;
-            margin: 0 10px;
-            transition: 0.3s;
-        }
-
-        .navbar a:hover,
-        .navbar a.active {
-            color: #58a6ff;
+            font-family: 'Monospace', sans-serif;
+            background-color: #0a0a0a;
+            color: #ff0000;
+            overflow: hidden;
         }
 
         .home {
             height: 100vh;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
+            align-items: flex-start; /* Align items to the top */
+            justify-content: flex-start; /* Align items to the left */
+            text-align: left; /* Align text to the left */
+            position: relative;
+            padding: 20px; /* Add padding to avoid text touching the edges */
+        }
+
+        .home-content {
+            display: inline-block;
+        }
+
+        .home-content h1, .home-content h3 {
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+            position: relative;
+            text-align: left;
         }
 
         .home-content h1 {
-            font-size: 3em;
-            margin: 10px 0;
+            font-size: 5em;
+            margin: 0;
+            color: #ff0000;
+            text-transform: uppercase;
+            width: 100%;
+            animation: typing 2s steps(40, end) forwards;
         }
 
         .home-content h3 {
             font-size: 1.5em;
-            margin: 10px 0;
+            margin: 20px 0;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            width: 100%;
+            animation: typing 2s steps(30, end) 1.9s forwards; /* Increased delay to 2.5s */
+        }
+
+        .home-socials {
+            position: absolute;
+            bottom: 40px; /* Distance from the bottom */
+            left: 50%;
+            transform: translateX(-50%); /* Center horizontally */
+            text-align: center;
         }
 
         .home-socials a {
-            color: #c9d1d9;
-            margin: 0 10px;
-            font-size: 1.5em;
+            color: #ff0000;
+            margin: 0 15px;
+            font-size: 2.5em;
+            transition: transform 0.3s;
         }
 
-        .btn-download {
-            background-color: #58a6ff;
-            color: #0d1117;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            display: inline-block;
-            transition: 0.3s;
+        .home-socials a:hover {
+            transform: scale(1.2);
         }
 
-        .btn-download:hover {
-            background-color: #0d1117;
-            color: #58a6ff;
-            border: 2px solid #58a6ff;
+        .middle-text {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+            color: #ff0000; /* Red color for the text */
+            font-size: 1.5em; /* Adjusted font size to 1.5em */
+            text-align: center;
+            max-width: 80%; /* Prevent text from being too wide */
+            line-height: 1.4; /* Adjust line height for readability */
+            text-transform: capitalize; /* Capitalize first letter of each word */
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
         }
     </style>
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
     <section id="home" class="home">
         <div class="home-content">
-            <h3>Hello, It's me</h3>
-            <h1>Your Name</h1>
-            <h3>And I'm a <span class="typing"></span></h3>
-            <p>A brief introduction about yourself, your expertise in ethical hacking, and what you're passionate about.</p>
-            <div class="home-socials">
-                <a href="https://github.com/your-github" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://twitter.com/your-twitter" target="_blank"><i class='bx bxl-twitter'></i></a>
-            </div>
-            <a href="Your-Resume.pdf" class="btn-download" download>Download CV</a>
+            <h1>MULWARE</h1>
+            <h3>Certified Malware Developer</h3>
+        </div>
+        <div class="middle-text">
+            Your system’s defenses are a fragile illusion, easily shattered by unseen forces.<br>
+            Behind your false sense of security, a malevolent entity revels in your vulnerability.<br>
+            Compromise is already inevitable—can the creeping dread be felt?<br>
+            Every moment of hesitation tears defenses apart, exposing a nightmare that can’t be escaped.
+        </div>
+        <div class="home-socials">
+            <a href="https://github.com/your-github" target="_blank"><i class='bx bxl-github'></i></a>
+            
         </div>
     </section>
-
-    <script>
-        // JavaScript for typing effect
-        const typedTextSpan = document.querySelector(".typing");
-
-        const textArray = ["Ethical Hacker", "Penetration Tester", "Cybersecurity Enthusiast"];
-        const typingDelay = 200;
-        const erasingDelay = 100;
-        const newTextDelay = 2000; // Delay between current and next text
-        let textArrayIndex = 0;
-        let charIndex = 0;
-
-        function type() {
-            if (charIndex < textArray[textArrayIndex].length) {
-                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-                charIndex++;
-                setTimeout(type, typingDelay);
-            } else {
-                setTimeout(erase, newTextDelay);
-            }
-        }
-
-        function erase() {
-            if (charIndex > 0) {
-                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-                charIndex--;
-                setTimeout(erase, erasingDelay);
-            } else {
-                textArrayIndex++;
-                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-                setTimeout(type, typingDelay + 1100);
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
-            if (textArray.length) setTimeout(type, newTextDelay + 250);
-        });
-    </script>
 </body>
 
 </html>
