@@ -55,12 +55,12 @@
             text-transform: uppercase;
             letter-spacing: 3px;
             width: 100%;
-            animation: typing 1s steps(20, end) 1s forwards;
+            animation: typing 1s steps(2000000, end) 1s forwards;
         }
 
         .home-socials {
             position: absolute;
-            bottom: -80px;
+            bottom: 50px;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
@@ -78,9 +78,9 @@
         }
 
         .middle-text {
-            
-            top: 40%;
-            left: 38%;
+            position: absolute; /* Make sure the position is set */
+            top: 10%;
+            left: 26%;
             transform: translate(-20%, 100%);
             color: #ff0000;
             font-size: 1.7em;
@@ -88,21 +88,21 @@
             max-width: 80%;
             line-height: 1.4;
             text-transform: capitalize;
-        }
-        .middle2-text {
-          
-            top: 35%;
-            left: 7000%;
-            transform: translate(50%, -200%);
-            color: #ff0000;
-            font-size: 1.7em;
-            text-align: center;
-            max-width: 80%;
-            line-height: 1.4;
-            text-transform: capitalize;
+            overflow: hidden; /* Ensure overflow is hidden */
+            white-space: nowrap; /* Ensure the text doesn't wrap */
+            animation: typing 1.2s steps(10000000, end) 0s forwards; /* Apply animation */
         }
 
         @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes typing-text {
             from {
                 width: 0;
             }
@@ -116,25 +116,19 @@
 <body>
     <section id="home" class="home">
         <div class="home-content">
-            <h1>𝙼𝚄𝙻𝚆𝙰𝚁𝙴
-</h1>
+            <h1>MULWARE HERE !</h1>
             <h3></h3>
         </div>
         <div class="middle-text">
             ʏᴏᴜʀ sʏsᴛᴇᴍ’s ᴅᴇfᴇɴsᴇs ᴀʀᴇ ᴀ ꜰʀᴀɢɪʟᴇ ɪʟʟᴜsɪᴏɴ..<br>
-ᴇᴀsɪʟʏ sʜᴀᴛᴛᴇʀᴇᴅ ʙʏ ᴜɴsᴇᴇɴ ꜰᴏʀᴄᴇs...<br>
-ʙᴇʜɪɴᴅ ʏᴏᴜʀ ꜰᴀʟsᴇ sᴇɴsᴇ ᴏғ sᴇᴄᴜʀɪᴛʏ, ᴀ ᴍᴀʟᴇᴠᴏʟᴇɴᴛ ᴇɴᴛɪᴛʏ ʀᴇᴠᴇʟs ɪɴ ʏᴏᴜʀ ᴠᴜʟɴᴇʀᴀʙɪʟɪᴛʏ.<br>
+ᴇᴀsɪʟʏ sʜᴀᴛᴛᴇʀᴇᴅ ʙʏ ᴜɴsᴇᴇɴ ꜰᴏʀᴄᴇs..<br>
+ʙᴇʜɪɴᴅ ʏᴏᴜʀ ꜰᴀʟsᴇ sᴇɴsᴇ ᴏғ sᴇᴄᴜʀɪᴛʏ, ᴀ ᴍᴀʟᴇᴠᴏʟᴇɴᴛ ᴇɴᴛɪᴛʏ ʀᴇᴠᴇʟs ɪɴ ʏᴏᴜʀ ᴠᴜʟɴᴇʀᴀʙɪʟɪᴛʏ..<br>
+ᴇᴠᴇʀʏ mᴏᴍᴇɴᴛ ᴏғ hᴇsɪᴛᴀᴛɪᴏɴ ᴛᴇᴀʀs ᴅᴇfᴇɴsᴇs ᴀᴘᴀʀᴛ, ᴇxᴘᴏsɪɴɢ ᴀ ɴɪɢʜᴛᴍᴀʀᴇ ᴛʜᴀᴛ ᴄᴀɴ’t ʙᴇ ᴇsᴄᴀᴘᴇᴅ..<br>
 ᴄᴏᴍᴘʀᴏᴍɪsᴇ ɪs ᴀʟʀᴇᴀᴅʏ ɪɴᴇᴠɪᴛᴀʙʟᴇ—ᴄᴀɴ ᴛʜᴇ ᴄʀᴇᴇᴘɪɴɢ ᴅʀᴇᴀᴅ ʙᴇ ꜰᴇʟᴛ?<br>
-ᴇᴠᴇʀʏ mᴏᴍᴇɴᴛ ᴏғ hᴇsɪᴛᴀᴛɪᴏɴ ᴛᴇᴀʀs ᴅᴇfᴇɴsᴇs ᴀᴘᴀʀᴛ, ᴇxᴘᴏsɪɴɢ ᴀ ɴɪɢʜᴛᴍᴀʀᴇ ᴛʜᴀᴛ ᴄᴀɴ’t ʙᴇ ᴇsᴄᴀᴘᴇᴅ.<br>
 
         </div>
         <div class="home-socials">
             <a href="https://github.com/mulwareX/" target="_blank"><i class='bx bxl-github'></i></a>
-           <div class="middle2-text">
-            "ɪɴ ᴛʜᴇ sʜᴀᴅᴏᴡʏ ᴄᴏʀɴᴇʀs ᴏғ ᴄʏʙᴇʀsᴘᴀᴄᴇ, ᴡʜᴇʀᴇ ᴜɴsᴇᴇɴ ᴛʜʀᴇᴀᴛs sɪʟᴇɴᴛʟʏ ᴍᴜᴛᴀᴛᴇ, ʟɪᴇs ᴀ ᴍᴀʟᴇᴠᴏʟᴇɴᴛ ғᴏʀᴄᴇ sᴏ ɪɴsɪᴅɪᴏᴜs ᴛʜᴀᴛ ᴇᴠᴇɴ ᴛʜᴇ ᴍᴏsᴛ sᴇᴄᴜʀᴇ sʏsᴛᴇᴍs ᴛʀᴇᴍʙʟᴇ ɪɴ ɪᴛs ᴡᴀᴋᴇ."
-<br>
-            
-        </div> 
         </div>
     </section>
 </body>
