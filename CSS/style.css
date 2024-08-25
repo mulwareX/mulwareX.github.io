@@ -139,9 +139,9 @@ body {
 }
 
 .home-sci a:hover {
-    background: red;
-    color: black;
-    box-shadow: 0 0 20px red;
+   box-shadow: 0 0 5px red,
+    0 0 25px red, 0 0 50px red,
+    0 0 100px red, 0 0 200px red;
 }
 
 .btn-box {
